@@ -1,3 +1,11 @@
+void PrintArray(string[]array)            
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+       Console.Write($"{array[i]} ");  
+    }
+    Console.WriteLine();
+}
 Console.WriteLine("Введите строку: ");    
 string? origStr = Console.ReadLine();
 
@@ -14,3 +22,4 @@ for (int i = 0; i < origStrMass.Length; i++)
         j++;                                                   
     }
 }   
+PrintArray(findWordsArr);
