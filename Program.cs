@@ -10,16 +10,16 @@ Console.WriteLine("Введите строку: ");
 string? origStr = Console.ReadLine();
 
 string[] origStrMass = origStr.Split(' ');
-string[] findWordsArr = new string[0];
+string[] newWordsMass = new string[0];
 
 int j = 0;                                 
 for (int i = 0; i < origStrMass.Length; i++)  
 {
     if (origStrMass[i].Length <= 3)           
     {
-        Array.Resize(ref findWordsArr, findWordsArr.Length + 1); 
-        findWordsArr[j] = origStrMass[i];                        
+        Array.Resize(ref newWordsMass, newWordsMass.Length + 1); 
+        newWordsMass[j] = origStrMass[i];                        
         j++;                                                   
     }
 }   
-PrintArray(findWordsArr);
+PrintArray(newWordsMass);
